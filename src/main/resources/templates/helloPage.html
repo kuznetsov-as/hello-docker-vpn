@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link th:href="@{/App.css}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body th:class="App">
+<div>
+    <header th:class="App-header">
+        <img th:src="@{/logo.svg}" th:class="App-logo" alt="logo" />
+
+        <p th:text="${time}">time</p>
+
+        <p th:text="${whoAmI}">whoAnI</p>
+    </header>
+</div>
+</body>
+</html>

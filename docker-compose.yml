@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  hello-page:
+    build: .
+    container_name: hello-page
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./../WhoAmI:/home/tony/helloPage/WhoAmI
